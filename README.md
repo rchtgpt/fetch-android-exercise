@@ -20,5 +20,7 @@ I implemented the Model-View-ViewModel (MVVM) architecture to cleanly separate b
    I structured the code into separate files for reusable components, promoting modularity, code reuse, and ease of maintenance.
 
 ### Video Demo
+<img width="483" alt="image" src="https://github.com/user-attachments/assets/1d47396c-1c91-447c-8d7d-df6792a00cce">
+
 
 
