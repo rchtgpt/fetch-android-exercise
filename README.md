@@ -12,6 +12,10 @@
 > Please make the project buildable on the latest (non-pre release) tools and supporting the current release mobile OS.
 
 
+### Screenshots of Scrollable Item List
+<img width="241.5" alt="image" src="https://github.com/user-attachments/assets/1d47396c-1c91-447c-8d7d-df6792a00cce">
+<img width="240.5" alt="image" src="https://github.com/user-attachments/assets/58c914d2-a358-454d-a934-d7464de311ef">
+
 
 ### Design Decisions:
 1. **MVVM Architecture:**  
@@ -31,10 +35,5 @@ I implemented the Model-View-ViewModel (MVVM) architecture to cleanly separate b
 
 6. **Modular Code Design:**  
    I structured the code into separate files for reusable components, promoting modularity, code reuse, and ease of maintenance.
-
-### Screenshots of Scrollable Item List
-<img width="483" alt="image" src="https://github.com/user-attachments/assets/1d47396c-1c91-447c-8d7d-df6792a00cce">
-<img width="481" alt="image" src="https://github.com/user-attachments/assets/58c914d2-a358-454d-a934-d7464de311ef">
-
 
 
