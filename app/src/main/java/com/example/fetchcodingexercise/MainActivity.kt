@@ -3,44 +3,49 @@ package com.example.fetchcodingexercise
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.fetchcodingexercise.composables.MainScreen
 import com.example.fetchcodingexercise.ui.theme.FetchCodingExerciseTheme
 
+/**
+ * Main activity of the Fetch Coding Exercise app.
+ *
+ * This activity sets the content of the app using Jetpack Compose and applies the
+ * FetchCodingExerciseTheme.
+ */
 class MainActivity : ComponentActivity() {
+    /**
+     * Called when the activity is starting.
+     *
+     * @param savedInstanceState If the activity is being re-initialized after previously being shut down,
+     * this bundle contains the data it most recently supplied.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             FetchCodingExerciseTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MainScreen()
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
+/**
+ * A composable function used to preview the MainScreen in Android Studio's preview pane.
+ */
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun MainScreenPreview() {
     FetchCodingExerciseTheme {
-        Greeting("Android")
+        MainScreen()
     }
 }

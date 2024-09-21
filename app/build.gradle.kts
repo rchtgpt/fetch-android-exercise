@@ -66,4 +66,24 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Retrofit for making HTTP requests
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    // Retrofit converter for converting JSON to Kotlin/Java objects
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    // Coroutine support for Retrofit (optional, if you're using coroutines)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+
+    // Jetpack Compose dependencies
+    implementation("androidx.compose.ui:ui:1.7.2")                     // Core Compose library
+    implementation("androidx.compose.material3:material3:1.3.0")       // Material 3 support
+    implementation("androidx.compose.runtime:runtime-livedata:1.7.2")  // Runtime support for LiveData (optional)
+
+    // ViewModel integration with Jetpack Compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")  // Add this for ViewModel integration in Compose
+
+    // Lifecycle support
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6") // ViewModel KTX for lifecycle-aware ViewModels
 }
